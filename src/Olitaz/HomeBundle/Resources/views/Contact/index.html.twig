@@ -1,0 +1,57 @@
+{% extends 'OlitazHomeBundle::base.html.twig' %}
+
+{% block content %}
+ <!--  Edito   -->
+<div id="intro">
+    <h1 class="h1Contact">Contactez-moi</h1>
+    <p>
+        OLITAZ reste à votre écoute. Vous souhaitez obtenir un devis ? Ou simplement me poser une question ?<br/>
+        Vous pouvez me contacter par téléphone, par mail, ou m’envoyez directement un message via le formulaire ci-dessous.
+    </p>
+</div>
+
+    <!--  Edito   -->
+<div id="content">
+    <div class="colPetit">
+        <div class="colPetitTop">
+            <h2>Coordonnées</h2>
+            <p class="black">
+                Olivier DOLBEAU<br/>
+                Consultant et développeur Web
+            </p>
+            <p>
+                13 rue des carreaux<br/>
+                95640 Marines<br/>
+                06.31.53.20.10
+            </p>
+            <p><a href="mailto:ocontact@olitaz.com">ocontact@olitaz.com</a></p>
+            <br/>
+            <p>
+                <a href="" title="Olitaz sur Facebook"><img src="{{ asset('/bundles/olitazhome/images/btn/fb.png') }}" alt="Olitaz sur Facebook" /></a>
+                <a href="" title="Olitaz sur Twitter"><img src="{{ asset('/bundles/olitazhome/images/btn/tw.png') }}" alt="Olitaz sur Twitter" /></a>
+                <a href="" title="Olitaz sur Skype"><img src="{{ asset('/bundles/olitazhome/images/btn/sk.png') }}" alt="Olitaz sur Skype" /></a>
+                <a href="" title="Olitaz sur LinkedIn"><img src="{{ asset('/bundles/olitazhome/images/btn/in.png') }}" alt="Olitaz sur LinkedIn" /></a>
+                <a href="" title="Olitaz sur FlickR"><img src="{{ asset('/bundles/olitazhome/images/btn/fr.png') }}" alt="Olitaz sur FlickR" /></a>
+                <a href="" title="Suivre Olitaz"><img src="{{ asset('/bundles/olitazhome/images/btn/rss.png') }}" alt="Suivre Olitaz" /></a>
+            </p>
+            <br/>
+            <p><img src="{{ asset('/bundles/olitazhome/images/illustr/carte.png') }}" alt="Olitaz à Marines (95)" /></p>
+        </div>
+    </div>
+    <div class="colMoyen">
+        <div class="colMoyenTop">
+            <h2>Envoyez un message</h2>
+            <form action="" method="post">
+                <p class="col1"><label>Nom <span>*</span></label><input name="Nom" value="" class="type1" /></p>
+                <p><label>Votre email <span>*</span></label><input name="Email" value="" class="type1" /></p>
+                <p><label>Sujet <span>*</span></label><input name="Sujet" value="" class="erreur type2" /></p>
+                <p><label>Votre message <span>*</span></label><textarea name="message" rows="" cols=""></textarea></p>
+                <p class="validForm"><input name="valid" type="image" title="Contacter Olitaz" src="images/btn/valider.png" /></p>
+            </form>
+            <p class="note"><span>*</span> Champs obligatoires</p>
+            <br/><br/><br/><br/>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

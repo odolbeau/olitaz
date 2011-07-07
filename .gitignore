@@ -1,0 +1,15 @@
+# Ignore private files
+app/config/parameters.ini
+
+# Ignore vendors & web folders
+vendor/*
+web/bundles
+
+# Ignore boostraps & cache / logs
+app/bootstrap_cache.php.cache
+app/bootstrap.php.cache
+app/cache
+app/logs
+
+# Ignore temporary files
+*.swp

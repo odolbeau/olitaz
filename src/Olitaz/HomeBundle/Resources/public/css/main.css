@@ -1,0 +1,101 @@
+/* CSS Olitaz */
+
+
+/* Général */
+body{ background: url(../images/bg/bgBody.png) left top repeat-x #e3e1e1 ; font-family:arial; color:#606161; font-size: 11px; margin:0; padding:0}
+img{ border:none}
+p, h2, ul{ margin:0}
+ul{ padding:0}
+.center{ text-align:center}
+.bold{ font-weight:bold}
+.clear{ clear:both; visibility:hidden}
+
+
+/* header */
+#header{ width:1000px; margin:auto; position:relative; height:318px; background: url(../images/illustr/slide01.jpg) bottom no-repeat}
+#logo{ position:absolute; left:0; top:0; z-index:50}
+#menu ul{ width:740px; left:221px; position:relative; margin:0; padding:0; top:14px; }
+#menu ul li{ display:block; float:left; width:93px; height:26px; text-align:center; padding:15px 15px 0; margin:0; background:url(../images/puce/separMenu.gif) right bottom no-repeat}
+#menu ul li a{ color:#fff; text-transform:uppercase; text-decoration:none}
+#menu ul li a:hover{ color:#08a393;}
+#menu ul li.current{ border-bottom:5px solid #08a393;}
+#menu ul li.current a{ color:#08a393;}
+#header .ariane{ font-style:italic; font-size:11px; color:#a9a9a9; left: 259px;position: absolute;top: 67px;}
+#header .ariane a{color:#1dab95;}
+
+
+/* edito de la home */
+#edito{ width:1000px; height:194px; background:url(../images/bg/bgEdito.png) left top no-repeat; margin:0 auto 0; padding-top:15px;}
+#edito .para1, #edito .para2, #edito .para3{ float:left}
+#edito .para1, #edito .para2, #edito .para3{ width:283px; padding:5px 25px 0 25px; background:url(../images/puce/separEdito.gif) right center no-repeat; line-height:24px}
+#edito .para3{ background:none}
+#edito p.editoTitre{ color:#fff; font-family:Georgia, "Times New Roman", Times, serif; font-size:26px; text-transform:uppercase}
+#edito p.editoTexte{ color:#a7a7a7; font-size:12px}
+#edito .para1 p.editoTitre{ background:url(../images/puce/editoOlitaz.jpg) left top no-repeat; padding:6px 0 11px 47px}
+#edito .para2 p.editoTitre{ background:url(../images/puce/editoSolutions.jpg) left top no-repeat; padding:6px 0 11px 35px}
+#edito .para3 p.editoTitre{ background:url(../images/puce/editoStrategie.jpg) left top no-repeat; padding:6px 0 11px 54px}
+#edito .editoLink{ text-align:right; padding:9px 0}
+
+
+/* contenu de la home */
+#content .cadreHomeBottom{ width:1000px; background:url(../images/bg/bgHomeBottom.png) left bottom no-repeat}
+#content .cadreHomeTop{ width:940px; background:url(../images/bg/bgHomeTop.png) left top no-repeat; padding:15px 30px}
+#content .lastNews{ width:270px; border-right:1px solid #CCCCCC; padding-right:32px; float:left}
+#content .lastRea { float: right; width: 608px;}
+#content .reaBloc1, #content .reaBloc2{ float:left; width:272px}
+#content .reaBloc2{ padding-left:62px}
+
+
+/* intro des pages internes */
+#intro{ width:980px; height:115px; background:url(../images/bg/bgIntro.png) left top no-repeat; margin:0 auto; padding-top:5px; padding-left:20px}
+#intro p { font-style:italic; font-size:12px; color:#a9a9a9; padding-left:60px}
+h1{ font-family:Georgia, "Times New Roman", Times, serif; font-size:50px; color:#a9a9a9; font-weight:normal; text-transform:uppercase; margin:0; padding:0px 0 0px 57px}
+.h1Erreur{ background:url(../images/puce/h1Erreur.jpg) left top no-repeat}
+.h1Contact{ background:url(../images/puce/h1Contact.jpg) left top no-repeat}
+.h1Presentation{ background:url(../images/puce/h1Presentation.jpg) left top no-repeat}
+.h1Blog{ background:url(../images/puce/h1Blog.jpg) left top no-repeat}
+
+
+/* contenu des pages internes */
+#content { width:1000px; margin:0 auto}
+#content .colPetit{ width:319px; background:url(../images/bg/contentPetitBottom.png) left bottom no-repeat; float:left}
+#content .colPetit .colPetitTop{ width:289px; background:url(../images/bg/contentPetitTop.png) left Top no-repeat; padding:15px 20px 20px}
+#content .colMoyen{ width:658px; background:url(../images/bg/contentMoyenBottom.png) left bottom no-repeat; float:right}
+#content .colMoyen .colMoyenTop{ width:628px; background:url(../images/bg/contentMoyenTop.png) left Top no-repeat; padding:15px 15px 28px}
+#content .colMiddle{ margin:0 21px}
+#content h2{ color:#1dab95; font-family:Georgia, "Times New Roman", Times, serif; font-size:28px; font-weight:normal;  padding-bottom:18px}
+#content .black{ color:#000; font-weight:bold;}
+#content a{ color:#1dab95}
+#content a:hover{ color:#000}
+#content p { line-height:18px}
+#content ul li { padding:6px 0 7px 10px; background:url(../images/puce/liste.gif) left 8px no-repeat; list-style-type:none}
+#content img.cadre{ border:1px solid #cfcfcf; background-color:#fff; padding:3px; margin:2px 0}
+#content p.pLink{ text-align:right}
+#content p.fLeft{ float:left; padding-right:7px}
+#content ul.menuBlog li{ border-bottom:1px dashed #cfcfcf; background:url(../images/puce/menuBlog.gif) 4px 11px no-repeat; width:260px; padding-left:13px}
+#content ul.menuBlog li a{ text-decoration:none; color:#606161;}
+#content ul.menuBlog li a:hover{color:#08a393}
+#content ul.menuBlog li.blogSelected{ background-color:#000; }
+#content ul.menuBlog li.blogSelected a{color:#fff}
+
+
+/* formulaire de contact */
+#content form input, #content form textarea { background-color:#e1e2e2; border:1px solid #e1e2e2}
+#content form input:focus, #content form textarea:focus{ border:1px solid #08a393}
+#content form input.erreur, #content form textarea.erreur{ border:1px solid #d72b0e}
+#content form label{ font-weight:bold; display:block; float:left; width:122px; color:#616161}
+#content form label span{ color:#08a393}
+#content form textarea{ width:487px; height:208px}
+#content form input.type1{ width:169px}
+#content form input.type2{ width:487px}
+#content form p{ padding: 8px 0}
+#content form p.col1{ float:left; padding-right:28px}
+#content form .validForm input{ border:none}
+#content form .validForm{ text-align:right; padding-right:16px}
+#content .note{ font-size:11px; color:#a1a1a1;}
+#content .note span{ color:#08a393}
+
+/* CSS footer */
+#footer{ width:1000px; text-align:right; margin:0 auto; clear:both; padding-top:8px; padding-bottom:26px}
+#footer a{ font-size:10px; color:#767676; text-decoration:none}
+#footer a:hover{ color:#1dab95}

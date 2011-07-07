@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>{% block title %}Olitaz{% endblock %}</title>
+        {% block stylesheets %}
+            <link href="{{ asset('/bundles/olitazhome/css/main.css') }}" rel="stylesheet" type="text/css" />
+        {% endblock %}
+        <link rel="shortcut icon" href="{{ asset('favicon.ico') }}" />
+    </head>
+    <body>
+        <!--  Header   -->
+        <div id="header">
+            <div id="logo">
+                <a href="home.html" title="Retour à la page d'accueil de Olitaz">
+                    <img src="{{ asset('/bundles/olitazhome/images/btn/logoOlitaz.png') }}" alt="Retour à la page d'accueil de Olitaz" />
+                </a>
+            </div>
+            <div id="menu">
+                {{ knp_menu('main') }}
+            </div>
+        </div>
+            
+        {% block body %}{% endblock %}
+
+        <!--  Footer  -->
+        <div id="footer">
+            Copyright 2011 | Tous droits réservés Olitaz | 
+            <a href="contact.html" title="Contactez Olitaz">Contact</a> | 
+            <a href="mentions.html" title="Mentions léagles Olitaz">Mentions légales</a> |  
+            <a href="home.html" title="Bienvenue sur le site de Olitaz">Développement Site internet Olitaz</a> | 
+            <a href="http://www.ijinan.org/" title="Ijinan Design - Graphisme print et web - Emilie Le Béhérec">Graphisme Site internet IjinanDesign</a>
+        </div>
+
+        {% block javascripts %}
+            
+        {% endblock %}
+    </body>
+</html>

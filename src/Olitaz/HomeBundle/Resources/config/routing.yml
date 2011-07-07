@@ -1,0 +1,7 @@
+OlitazHomeBundle_homepage:
+    pattern:  /
+    defaults: { _controller: OlitazHomeBundle:Default:index }
+    
+OlitazHomeBundle_contact:
+    pattern:  /contact
+    defaults: { _controller: OlitazHomeBundle:Contact:index }
