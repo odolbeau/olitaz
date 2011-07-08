@@ -12,7 +12,9 @@ ul{ padding:0}
 
 
 /* header */
-#header{ width:1000px; margin:auto; position:relative; height:318px; background: url(../images/illustr/slide01.jpg) bottom no-repeat}
+#header,#header_home{ width:1000px; margin:auto; position:relative}
+#header{ height:160px}
+#header_home{ height:318px; background: url(../images/illustr/slide01.jpg) bottom no-repeat}
 #logo{ position:absolute; left:0; top:0; z-index:50}
 #menu ul{ width:740px; left:221px; position:relative; margin:0; padding:0; top:14px; }
 #menu ul li{ display:block; float:left; width:93px; height:26px; text-align:center; padding:15px 15px 0; margin:0; background:url(../images/puce/separMenu.gif) right bottom no-repeat}

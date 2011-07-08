@@ -9,17 +9,6 @@
         <link rel="shortcut icon" href="{{ asset('favicon.ico') }}" />
     </head>
     <body>
-        <!--  Header   -->
-        <div id="header">
-            <div id="logo">
-                <a href="home.html" title="Retour à la page d'accueil de Olitaz">
-                    <img src="{{ asset('/bundles/olitazhome/images/btn/logoOlitaz.png') }}" alt="Retour à la page d'accueil de Olitaz" />
-                </a>
-            </div>
-            <div id="menu">
-                {{ knp_menu('main') }}
-            </div>
-        </div>
             
         {% block body %}{% endblock %}
 
