@@ -5,14 +5,12 @@ app/config/parameters.ini
 vendor/*
 web/bundles
 
-# Ignore boostraps & cache / logs
+# Ignore boostraps & cache / logs / spool
 app/bootstrap_cache.php.cache
 app/bootstrap.php.cache
-app/cache
-app/logs
+app/cache/*
+app/logs/*
+app/spool/*
 
 # Ignore temporary files
 *.swp
-
-# Ignore spool
-app/spool
