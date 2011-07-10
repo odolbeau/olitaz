@@ -2,17 +2,7 @@
 
 {% block body %}
     
-    <!--  Header   -->
-    <div id="header_home">
-        <div id="logo">
-            <a href="home.html" title="Retour à la page d'accueil de Olitaz">
-                <img src="{{ asset('/bundles/olitazhome/images/btn/logoOlitaz.png') }}" alt="Retour à la page d'accueil de Olitaz" />
-            </a>
-        </div>
-        <div id="menu">
-            {{ knp_menu('main') }}
-        </div>
-    </div>
+    {% include 'OlitazHomeBundle::header.html.twig' with {'type':'home'} %}
 
     {% block content %}{% endblock %}
 {% endblock %}

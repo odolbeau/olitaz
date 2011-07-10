@@ -1,7 +1,0 @@
-parameters:
-#    olitaz_blog.example.class: Olitaz\BlogBundle\Example
-
-services:
-#    olitaz_blog.example:
-#        class: %olitaz_blog.example.class%
-#        arguments: [@service_id, "plain_value", %parameter%]

@@ -13,3 +13,6 @@ app/logs
 
 # Ignore temporary files
 *.swp
+
+# Ignore spool
+app/spool

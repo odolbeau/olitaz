@@ -12,8 +12,7 @@ ul{ padding:0}
 
 
 /* header */
-#header,#header_home{ width:1000px; margin:auto; position:relative}
-#header{ height:160px}
+.header{ width:1000px; margin:auto; position:relative; height:160px}
 #header_home{ height:318px; background: url(../images/illustr/slide01.jpg) bottom no-repeat}
 #logo{ position:absolute; left:0; top:0; z-index:50}
 #menu ul{ width:740px; left:221px; position:relative; margin:0; padding:0; top:14px; }
@@ -22,8 +21,8 @@ ul{ padding:0}
 #menu ul li a:hover{ color:#08a393;}
 #menu ul li.current{ border-bottom:5px solid #08a393;}
 #menu ul li.current a{ color:#08a393;}
-#header .ariane{ font-style:italic; font-size:11px; color:#a9a9a9; left: 259px;position: absolute;top: 67px;}
-#header .ariane a{color:#1dab95;}
+.header .ariane{ font-style:italic; font-size:11px; color:#a9a9a9; left: 259px;position: absolute;top: 67px;}
+.header .ariane a{color:#1dab95;}
 
 
 /* edito de la home */
@@ -64,6 +63,8 @@ h1{ font-family:Georgia, "Times New Roman", Times, serif; font-size:50px; color:
 #content .colPetit .colPetitTop{ width:289px; background:url(../images/bg/contentPetitTop.png) left Top no-repeat; padding:15px 20px 20px}
 #content .colMoyen{ width:658px; background:url(../images/bg/contentMoyenBottom.png) left bottom no-repeat; float:right}
 #content .colMoyen .colMoyenTop{ width:628px; background:url(../images/bg/contentMoyenTop.png) left Top no-repeat; padding:15px 15px 28px}
+#content .colGrand{ width:980px; background:url(../images/bg/contentGrandBottom.png) left bottom no-repeat; float:right}
+#content .colGrand .colGrandTop{ width:650px; background:url(../images/bg/contentGrandTop.png) left Top no-repeat; padding:15px 15px 28px}
 #content .colMiddle{ margin:0 21px}
 #content h2{ color:#1dab95; font-family:Georgia, "Times New Roman", Times, serif; font-size:28px; font-weight:normal;  padding-bottom:18px}
 #content .black{ color:#000; font-weight:bold;}
@@ -90,8 +91,12 @@ h1{ font-family:Georgia, "Times New Roman", Times, serif; font-size:50px; color:
 #content form textarea{ width:487px; height:208px}
 #content form input.type1{ width:169px}
 #content form input.type2{ width:487px}
-#content form p{ padding: 8px 0}
-#content form p.col1{ float:left; padding-right:28px}
+#content form div ul{ list-style-type:none}
+#content form div ul li{ background:none; color:#d72b0e; padding:0 0 0 123px}
+#content form div.col2 ul li{ background:none; color:#d72b0e; padding:0 0 0 443px}
+#content form div ul + label + input, #content form div ul + label + textarea{ border:1px solid #d72b0e}
+#content form div{ padding: 8px 0}
+#content form div.col1{ float:left; padding-right:28px}
 #content form .validForm input{ border:none}
 #content form .validForm{ text-align:right; padding-right:16px}
 #content .note{ font-size:11px; color:#a1a1a1;}

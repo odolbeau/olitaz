@@ -23,7 +23,6 @@ class AppKernel extends Kernel
 
             // Application bundles
             new Olitaz\HomeBundle\OlitazHomeBundle(),
-            new Olitaz\BlogBundle\OlitazBlogBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {

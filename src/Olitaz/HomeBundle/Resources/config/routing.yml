@@ -1,7 +1,18 @@
+# DefaultController
 OlitazHomeBundle_homepage:
     pattern:  /
     defaults: { _controller: OlitazHomeBundle:Default:index }
-    
+OlitazHomeBundle_legal_notices:
+    pattern:  /mentions-legales
+    defaults: { _controller: OlitazHomeBundle:Default:legalNotices }
+
+# ContactController
 OlitazHomeBundle_contact:
     pattern:  /contact
     defaults: { _controller: OlitazHomeBundle:Contact:index }
+OlitazHomeBundle_createContact:
+    pattern:  /create_contact
+    defaults: { _controller: OlitazHomeBundle:Contact:create }
+OlitazHomeBundle_contacted:
+    pattern:  /contacted
+    defaults: { _controller: OlitazHomeBundle:Contact:contacted }

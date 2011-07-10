@@ -40,36 +40,9 @@
     </div>
     <div class="colMoyen">
         <div class="colMoyenTop">
-            <h2>Envoyez un message</h2>
-            <form action="{{ path('OlitazHomeBundle_createContact') }}" method="post" {{ form_enctype(form) }}>
-                {{ form_errors(form) }}
-                <div class="col1">
-                    {{ form_errors(form.name) }}
-                    {{ form_label(form.name, "Votre nom") }}
-                    {{ form_widget(form.name, { 'attr': {'class': 'type1'} }) }}
-                </div>
-                <div class="col2">
-                    {{ form_errors(form.mail) }}
-                    {{ form_label(form.mail, "Votre email") }}
-                    {{ form_widget(form.mail, { 'attr': {'class': 'type1'} }) }}
-                </div>
-                <div>
-                    {{ form_errors(form.subject) }}
-                    {{ form_label(form.subject, "Sujet") }}
-                    {{ form_widget(form.subject, { 'attr': {'class': 'type2'} }) }}
-                </div>
-                <div>
-                    {{ form_errors(form.content) }}
-                    {{ form_label(form.content, "Votre message") }}
-                    {{ form_widget(form.content) }}
-                </div>
-                <p class="validForm">
-                    {{ form_rest(form) }}<br />
-                    <input name="valid" type="image" title="Contacter Olitaz" src="{{ asset('/bundles/olitazhome/images/btn/valider.png') }}" />
-                </p>
-            </form>
-            <p class="note"><span>*</span> Tous les champs sont obligatoires</p>
-            <br/><br/><br/><br/>
+            <h2>Votre message a été envoyé</h2>
+            <p>Nous vous recontacterons dans les plus brefs délais.</p>
+            <br/><br/>
         </div>
     </div>
 </div>

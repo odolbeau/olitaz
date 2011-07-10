@@ -1,3 +1,0 @@
-OlitazBlogBundle_homepage:
-    pattern:  /blog/home
-    defaults: { _controller: OlitazBlogBundle:Default:index }
