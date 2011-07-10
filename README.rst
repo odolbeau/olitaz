@@ -6,7 +6,7 @@ Installation
 
 Clone the repo.
 
-Copy ``app/config/parameters.ini-dist`` files & change configuration
+Copy ``app/config/parameters.ini-dist`` file & change configuration
 
 Install the vendors:
 
