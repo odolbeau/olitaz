@@ -5,6 +5,9 @@ OlitazHomeBundle_homepage:
 OlitazHomeBundle_legal_notices:
     pattern:  /mentions-legales
     defaults: { _controller: OlitazHomeBundle:Default:legalNotices }
+OlitazHomeBundle_presentation:
+    pattern:  /presentation
+    defaults: { _controller: OlitazHomeBundle:Default:presentation }
 
 # ContactController
 OlitazHomeBundle_contact:

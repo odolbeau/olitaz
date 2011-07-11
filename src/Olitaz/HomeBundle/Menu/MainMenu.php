@@ -19,7 +19,7 @@ class MainMenu extends Menu
         $this->setCurrentUri($request->getRequestUri());
 
         $this->addChild('Home', $router->generate('OlitazHomeBundle_homepage'));
-        $this->addChild('Présentation', $router->generate('OlitazHomeBundle_homepage'));
+        $this->addChild('Présentation', $router->generate('OlitazHomeBundle_presentation'));
         $this->addChild('Prestations', $router->generate('OlitazHomeBundle_homepage'));
 //        $this->addChild('Références', $router->generate('OlitazHomeBundle_homepage'));
         $this->addChild('Contact', $router->generate('OlitazHomeBundle_contact'));
