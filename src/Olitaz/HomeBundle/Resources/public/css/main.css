@@ -2,12 +2,13 @@
 
 
 /* Général */
-body{ background: url(../images/bg/bgBody.png) left top repeat-x #e3e1e1 ; font-family:arial; color:#606161; font-size: 11px; margin:0; padding:0}
+body{ background: url(../images/bg/bgBody.png) left top repeat-x #e3e1e1; font-family:Helvetica,arial,sans-serif; color:#606161; font-size: 12px; margin:0; padding:0; text-align:justify}
 img{ border:none}
 p, h2, ul{ margin:0}
 ul{ padding:0}
 .center{ text-align:center}
 .bold{ font-weight:bold}
+.underline{ text-decoration:underline}
 .clear{ clear:both; visibility:hidden}
 
 
@@ -72,7 +73,8 @@ h1{ font-family:Georgia, "Times New Roman", Times, serif; font-size:50px; color:
 #content a:hover{ color:#000}
 #content p { line-height:18px}
 #content ul li { padding:6px 0 7px 10px; background:url(../images/puce/liste.gif) left 8px no-repeat; list-style-type:none}
-#content img.cadre{ border:1px solid #cfcfcf; background-color:#fff; padding:3px; margin:2px 0}
+#content img.cadre{ border:1px solid #cfcfcf; background-color:#fff; padding:3px; margin:2px 0px 2px 10px}
+#content img.right{ float:right}
 #content p.pLink{ text-align:right}
 #content p.fLeft{ float:left; padding-right:7px}
 #content ul.menuBlog li{ border-bottom:1px dashed #cfcfcf; background:url(../images/puce/menuBlog.gif) 4px 11px no-repeat; width:260px; padding-left:13px}

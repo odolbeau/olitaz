@@ -32,6 +32,6 @@ class ContactControllerTest extends WebTestCase
         $this->assertEquals(200, $client->getResponse()->getStatusCode());
         $this->assertTrue($crawler->filter('h2:contains("Votre message a été envoyé")')->count() > 0, 'Can`ŧ find the good title (h2)');
 
-        
+        echo $client->getContainer()->get('mailer')->getTransport()->getSpool()->flushQueue($client->getContainer()->get('mailer')->getTransport());
     }
 }
