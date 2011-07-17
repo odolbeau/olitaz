@@ -68,3 +68,6 @@ jms_security_extra:
 
 knp_menu:
     twig: true
+
+olitaz_home:
+    tumblr_api_key: %tumblr_api_key%

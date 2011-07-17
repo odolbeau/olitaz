@@ -1,7 +1,0 @@
-parameters:
-#    olitaz_home.example.class: Olitaz\HomeBundle\Example
-
-services:
-#    olitaz_home.example:
-#        class: %olitaz_home.example.class%
-#        arguments: [@service_id, "plain_value", %parameter%]
