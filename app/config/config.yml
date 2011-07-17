@@ -7,7 +7,7 @@ parameters:
     admin_mail: odolbeau@gmail.com
 
 framework:
-    #esi:             ~
+    esi:             { enabled: true }
     secret:          %secret%
     charset:         UTF-8
     router:          { resource: "%kernel.root_dir%/config/routing.yml" }
