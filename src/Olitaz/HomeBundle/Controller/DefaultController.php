@@ -34,10 +34,13 @@ class DefaultController extends Controller
         return $response;
     }
 
-    // ESIs
+    // ESI
     public function newsAction()
     {
-        $response = $this->render('OlitazHomeBundle:Default:news.html.twig');
+        $tumblr = $this->container->get('olitaz.tumblr');
+        $posts = $tumblr->retrieveLastPosts(2);
+
+        $response = $this->render('OlitazHomeBundle:Default:news.html.twig', array('posts' => $posts));
         $response->setSharedMaxAge(60*60*24*1); // 1 day
         $response->setPublic();
 

@@ -5,11 +5,13 @@
 
     <parameters>
         <parameter key="olitaz.tumblr.class">Olitaz\HomeBundle\WS\Tumblr</parameter>
+        <parameter key="olitaz.tumblr.entry_point" />
         <parameter key="olitaz.tumblr.api_key" />
     </parameters>
 
     <services>
         <service id="olitaz.tumblr" class="%olitaz.tumblr.class%">
+            <argument>%olitaz.tumblr.entry_point%</argument>
             <argument>%olitaz.tumblr.api_key%</argument>
             <argument type="service" id="logger" on-invalid="null" />
         </service>

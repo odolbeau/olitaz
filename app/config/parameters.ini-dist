@@ -6,7 +6,7 @@
     database_host     = localhost
     database_name     = olitaz_website
     database_user     = root
-    database_password = 
+    database_password =
 
     mailer_transport  = mail
     mailer_user       =
@@ -19,3 +19,6 @@
     locale            = fr
 
     secret            = ThisTokenIsNotSoSecretChangeIt
+
+    tumblr_entry_point = http://api.tumblr.com/v2/blog/blog-url
+    tumblr_api_key     =

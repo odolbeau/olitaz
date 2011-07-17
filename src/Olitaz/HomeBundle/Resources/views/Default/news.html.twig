@@ -1,12 +1,15 @@
 <div class="lastNews">
-    <h2>TotoLes dernières news</h2>
-    <p class="bold">13.06.2011</p>
-    <p class="black">Hanc regionem praestitutis celebritati diebus qui admissi herbidas</p>
-    <p>Invadere parans dux ante edictus per solitudines Abo raeque amnis herbidas ripas, suorum indic...</p>
-    <p class="pLink"><a href="" title="">Lire la suite</a></p>
-    <br/>
-    <p class="bold">13.06.2011</p>
-    <p class="black">Hanc regionem praestitutis celebritati diebus qui admissi herbidas</p>
-    <p>Invadere parans dux ante edictus per solitudines Abo raeque amnis herbidas ripas, suorum indic...</p>
-    <p class="pLink"><a href="" title="">Lire la suite</a></p>
+    <h2>Les derniers articles</h2>
+    {% if posts is empty %}
+        <p>Oups! Il semblerait qu'une erreur soit survenue durant la récupération des articles!</p>
+        <br />
+        <p>N'hésitez pas à me <a href="{{ path('OlitazHomeBundle_contact') }}" title="contacter Olitaz">contacter</a> pour me signaler le problème! :) Merci!</p>
+    {% else %}
+        {% for post in posts %}
+            <p class="bold">{{ post.date|date("d/m/Y") }}</p>
+            <p class="black">{{ post.title }}</p>
+            <p>{{ post.body }}</p>
+            <p class="pLink"><a href="{{ post.url }}" title="{{ post.title }}">Lire la suite</a></p>
+        {% endfor %}
+    {% endif %}
 </div>

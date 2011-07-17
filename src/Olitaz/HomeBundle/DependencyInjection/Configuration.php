@@ -22,7 +22,12 @@ class Configuration implements ConfigurationInterface
 
         $rootNode
             ->children()
-                ->scalarNode('tumblr_api_key')->isRequired()->end()
+                ->arrayNode('tumblr')
+                    ->children()
+                        ->scalarNode('entry_point')->isRequired()->end()
+                        ->scalarNode('api_key')->isRequired()->end()
+                    ->end()
+                ->end()
             ->end()
         ;
 

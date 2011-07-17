@@ -27,6 +27,7 @@ class OlitazHomeExtension extends Extension
         $loader = new XmlFileLoader($container, new FileLocator(__DIR__ . '/../Resources/config'));
         $loader->load('services.xml');
 
-        $container->setParameter('olitaz.tumblr.api_key', $config['tumblr_api_key']);
+        $container->setParameter('olitaz.tumblr.entry_point', $config['tumblr']['entry_point']);
+        $container->setParameter('olitaz.tumblr.api_key', $config['tumblr']['api_key']);
     }
 }

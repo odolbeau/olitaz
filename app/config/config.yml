@@ -70,4 +70,6 @@ knp_menu:
     twig: true
 
 olitaz_home:
-    tumblr_api_key: %tumblr_api_key%
+    tumblr:
+        entry_point: %tumblr_entry_point%
+        api_key: %tumblr_api_key%
