@@ -34,7 +34,7 @@ class Tumblr {
 
     public function retrieveLastPosts($number)
     {
-        $response = $this->call('posts', array('limit' => $number));
+        $response = $this->call('posts/text', array('limit' => $number));
 
         if(!$response || 200 != $response->meta->status || !$response->response->posts)
         {
