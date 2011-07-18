@@ -8,6 +8,9 @@ OlitazHomeBundle_legal_notices:
 OlitazHomeBundle_presentation:
     pattern:  /presentation
     defaults: { _controller: OlitazHomeBundle:Default:presentation }
+OlitazHomeBundle_prestations:
+    pattern:  /prestations
+    defaults: { _controller: OlitazHomeBundle:Default:prestations }
 
 # ContactController
 OlitazHomeBundle_contact:

@@ -25,6 +25,14 @@ class DefaultController extends Controller
         return $response;
     }
 
+    public function prestationsAction() {
+        $response = $this->render('OlitazHomeBundle:Default:prestations.html.twig');
+        $response->setSharedMaxAge(60*60*24*30); // 30 days
+        $response->setPublic();
+
+        return $response;
+    }
+
     public function legalNoticesAction()
     {
         $response = $this->render('OlitazHomeBundle:Default:legal_notices.html.twig');
