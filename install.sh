@@ -1,6 +1,7 @@
 #!/bin/bash
 
-# Clear cache
+# Delete then warmup cache
+rm -Rf app/cache/*
 app/console cache:warmup
 
 # Install assets
