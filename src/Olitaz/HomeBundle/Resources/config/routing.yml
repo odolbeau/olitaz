@@ -5,12 +5,14 @@ OlitazHomeBundle_homepage:
 OlitazHomeBundle_legal_notices:
     pattern:  /mentions-legales
     defaults: { _controller: OlitazHomeBundle:Default:legalNotices }
+
+# PresentationController
 OlitazHomeBundle_presentation:
     pattern:  /presentation
-    defaults: { _controller: OlitazHomeBundle:Default:presentation }
+    defaults: { _controller: OlitazHomeBundle:Presentation:presentation }
 OlitazHomeBundle_prestations:
     pattern:  /prestations
-    defaults: { _controller: OlitazHomeBundle:Default:prestations }
+    defaults: { _controller: OlitazHomeBundle:Presentation:prestations }
 
 # ContactController
 OlitazHomeBundle_contact:
