@@ -13,6 +13,12 @@ OlitazHomeBundle_presentation:
 OlitazHomeBundle_prestations:
     pattern:  /prestations
     defaults: { _controller: OlitazHomeBundle:Presentation:prestations }
+OlitazHomeBundle_audit:
+    pattern:  /prestations/audit-conseil
+    defaults: { _controller: OlitazHomeBundle:Presentation:audit }
+OlitazHomeBundle_development:
+    pattern:  /prestations/developpement-specifique
+    defaults: { _controller: OlitazHomeBundle:Presentation:development }
 
 # ContactController
 OlitazHomeBundle_contact:

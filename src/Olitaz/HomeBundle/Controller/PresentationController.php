@@ -23,4 +23,20 @@ class PresentationController extends Controller
 
         return $response;
     }
+
+    public function auditAction() {
+        $response = $this->render('OlitazHomeBundle:Presentation:audit.html.twig');
+        $response->setSharedMaxAge(60*60*24*30); // 30 days
+        $response->setPublic();
+
+        return $response;
+    }
+
+    public function developmentAction() {
+        $response = $this->render('OlitazHomeBundle:Presentation:development.html.twig');
+        $response->setSharedMaxAge(60*60*24*30); // 30 days
+        $response->setPublic();
+
+        return $response;
+    }
 }

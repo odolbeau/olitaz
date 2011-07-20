@@ -1,0 +1,21 @@
+{% extends 'OlitazHomeBundle::base.html.twig' %}
+
+{% block content %}
+    <div id="content">
+        <div class="colPetit">
+            <div class="colPetitTop">
+                <h2>Navigation</h2>
+                <ul>
+                    <li><a href="{{ path('OlitazHomeBundle_audit') }}">Audit & Conseil</a></li>
+                    <li><a href="{{ path('OlitazHomeBundle_development') }}">Développement spécifique</a></li>
+                </ul>
+                <br/>
+            </div>
+        </div>
+        <div class="colMoyen">
+            <div class="colMoyenTop">
+                {% block prestation %}{% endblock %}
+            </div>
+        </div>
+    </div>
+{% endblock %}
