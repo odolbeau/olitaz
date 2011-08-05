@@ -23,6 +23,5 @@ class MainMenu extends Menu
         $this->addChild('Prestations', $router->generate('OlitazHomeBundle_prestations'));
 //        $this->addChild('Références', $router->generate('OlitazHomeBundle_homepage'));
         $this->addChild('Contact', $router->generate('OlitazHomeBundle_contact'));
-        $this->addChild('Blog', 'http://blog.olitaz.fr/');
     }
 }
