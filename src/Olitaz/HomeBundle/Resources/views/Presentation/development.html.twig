@@ -1,6 +1,10 @@
 {% extends 'OlitazHomeBundle::base_prestations.html.twig' %}
 
 {% set nav = 'prestations' %}
+{% set ariane = [
+        { 'href': url('OlitazHomeBundle_prestations'), 'name': 'Prestations', 'title': 'Prestations proposées par Olitaz' },
+        { 'href': url('OlitazHomeBundle_development'), 'name': 'Développement spécifique', 'title': 'Présentation de l\'activité de développement proposée par Olitaz' }
+    ] %}
 
 {% block prestation %}
     <h1>Prestations - Développement spécifique</h1>

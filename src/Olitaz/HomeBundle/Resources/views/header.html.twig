@@ -13,5 +13,14 @@
             <li class="{% if nav == 'contact' %}current{% endif %}"><a href="{{ url('OlitazHomeBundle_contact') }}">Contact</a></li>
         </ul>
     </div>
-    <p class="ariane">Vous êtes ici : <a href="home.html" title="Retourner à l'accueil de Olitaz">Accueil</a> > Le Blog</p>
+
+    <p class="ariane">
+        Vous êtes ici :
+        <a href="home.html" title="Retourner à l'accueil de Olitaz">Accueil</a>
+        {% if ariane is defined %}
+            {% for link in ariane %}
+                > <a href="{{ link.href }}" title="{{ link.title }}">{{ link.name }}</a>
+            {% endfor %}
+        {% endif %}
+    </p>
 </div>
