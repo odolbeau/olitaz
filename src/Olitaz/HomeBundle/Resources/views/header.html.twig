@@ -7,10 +7,18 @@
 
     <div id="menu">
         <ul>
-            <li class="first {% if nav == 'home' %}current{% endif %}"><a href="{{ url('OlitazHomeBundle_homepage') }}">Accueil</a></li>
-            <li class="{% if nav == 'presentation' %}current{% endif %}"><a href="{{ url('OlitazHomeBundle_presentation') }}">Présentation</a></li>
-            <li class="{% if nav == 'prestations' %}current{% endif %}"><a href="{{ url('OlitazHomeBundle_prestations') }}">Prestations</a></li>
-            <li class="{% if nav == 'contact' %}current{% endif %}"><a href="{{ url('OlitazHomeBundle_contact') }}">Contact</a></li>
+            <li class="first {% if nav == 'home' %}current{% endif %}">
+                <a href="{{ url('OlitazHomeBundle_homepage') }}" title="Page d'accueil de la société Olitaz">Accueil</a>
+            </li>
+            <li class="{% if nav == 'presentation' %}current{% endif %}">
+                <a href="{{ url('OlitazHomeBundle_presentation') }}" title="Présentation de la société Olitaz">Présentation</a>
+            </li>
+            <li class="{% if nav == 'prestations' %}current{% endif %}">
+                <a href="{{ url('OlitazHomeBundle_prestations') }}" title="Prestations proposées par Olitaz">Prestations</a>
+            </li>
+            <li class="{% if nav == 'contact' %}current{% endif %}">
+                <a href="{{ url('OlitazHomeBundle_contact') }}" title="Contacter la société Olitaz">Contact</a>
+            </li>
         </ul>
     </div>
 
