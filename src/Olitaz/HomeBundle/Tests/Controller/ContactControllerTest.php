@@ -15,8 +15,8 @@ class ContactControllerTest extends WebTestCase
         // page is ok
         $this->assertTrue($client->getResponse()->isSuccessful());
         $this->assertEquals(200, $client->getResponse()->getStatusCode());
-        $this->assertTrue($crawler->filter('h1:contains("Contactez-moi")')->count() > 0, 'Can`ŧ find the good title (h1)');
-        $this->assertTrue($crawler->filter('h2:contains("Envoyez un message")')->count() > 0, 'Can`ŧ find the good title (h2)');
+        $this->assertTrue($crawler->filter('div.colPetitTop > h1:contains("Coordonnées")')->count() > 0, 'Can`ŧ find the good title (h1)');
+        $this->assertTrue($crawler->filter('div.colMoyenTop > h1:contains("Envoyez un message")')->count() > 0, 'Can`ŧ find the good title (h1)');
 
         // try to send a contact email
         $form = $crawler->selectButton('valid')->form();
@@ -30,7 +30,7 @@ class ContactControllerTest extends WebTestCase
         $crawler = $client->followRedirect();
         $this->assertTrue($client->getResponse()->isSuccessful());
         $this->assertEquals(200, $client->getResponse()->getStatusCode());
-        $this->assertTrue($crawler->filter('h2:contains("Votre message a été envoyé")')->count() > 0, 'Can`ŧ find the good title (h2)');
+        $this->assertTrue($crawler->filter('div.colMoyenTop > h1:contains("Votre message a été envoyé")')->count() > 0, 'Can`ŧ find the good title (h1)');
 
         echo $client->getContainer()->get('mailer')->getTransport()->getSpool()->flushQueue($client->getContainer()->get('mailer')->getTransport());
     }
