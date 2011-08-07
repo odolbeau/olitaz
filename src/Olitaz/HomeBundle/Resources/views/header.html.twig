@@ -5,6 +5,10 @@
         </a>
     </div>
 
+    {% if nav is not defined %}
+        {% set nav = '' %}
+    {% endif %}
+
     <div id="menu">
         <ul>
             <li class="first {% if nav == 'home' %}current{% endif %}">
