@@ -4,8 +4,14 @@
             <img src="{{ asset('/bundles/olitazhome/images/btn/logoOlitaz.png') }}" alt="Retour à la page d'accueil de Olitaz" />
         </a>
     </div>
+
     <div id="menu">
-        {{ knp_menu('main') }}
+        <ul>
+            <li class="first {% if nav == 'home' %}current{% endif %}"><a href="{{ url('OlitazHomeBundle_homepage') }}">Accueil</a></li>
+            <li class="{% if nav == 'presentation' %}current{% endif %}"><a href="{{ url('OlitazHomeBundle_presentation') }}">Présentation</a></li>
+            <li class="{% if nav == 'prestations' %}current{% endif %}"><a href="{{ url('OlitazHomeBundle_prestations') }}">Prestations</a></li>
+            <li class="{% if nav == 'contact' %}current{% endif %}"><a href="{{ url('OlitazHomeBundle_contact') }}">Contact</a></li>
+        </ul>
     </div>
     <p class="ariane">Vous êtes ici : <a href="home.html" title="Retourner à l'accueil de Olitaz">Accueil</a> > Le Blog</p>
 </div>

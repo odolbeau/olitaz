@@ -1,7 +1,6 @@
 imports:
     - { resource: parameters.ini }
     - { resource: security.yml }
-    - { resource: "@OlitazHomeBundle/Resources/config/menu.xml" }
 
 parameters:
     admin_mail: odolbeau@gmail.com
@@ -65,9 +64,6 @@ swiftmailer:
 jms_security_extra:
     secure_controllers:  true
     secure_all_services: false
-
-knp_menu:
-    twig: true
 
 olitaz_home:
     tumblr:

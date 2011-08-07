@@ -19,7 +19,6 @@ class AppKernel extends Kernel
             new JMS\SecurityExtraBundle\JMSSecurityExtraBundle(),
 
             // External bundles
-            new Knp\Bundle\MenuBundle\KnpMenuBundle(),
 
             // Application bundles
             new Olitaz\HomeBundle\OlitazHomeBundle(),
