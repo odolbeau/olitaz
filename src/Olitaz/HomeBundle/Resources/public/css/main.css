@@ -4,7 +4,7 @@
 /* Général */
 body{ background: url(../images/bg/bgBody.png) left top repeat-x #e3e1e1; font-family:Helvetica,arial,sans-serif; color:#606161; font-size: 12px; margin:0; padding:0; text-align:justify}
 img{ border:none}
-p, h2, ul{ margin:0}
+p, h1, ul{ margin:0}
 ul{ padding:0}
 .center{ text-align:center}
 .bold{ font-weight:bold}
@@ -47,17 +47,6 @@ ul{ padding:0}
 #content .reaBloc1, #content .reaBloc2{ float:left; width:272px}
 #content .reaBloc2{ padding-left:62px}
 
-
-/* intro des pages internes */
-#intro{ width:980px; height:115px; background:url(../images/bg/bgIntro.png) left top no-repeat; margin:0 auto; padding-top:5px; padding-left:20px}
-#intro p { font-style:italic; font-size:12px; color:#a9a9a9; padding-left:60px}
-h1{ font-family:Georgia, "Times New Roman", Times, serif; font-size:50px; color:#a9a9a9; font-weight:normal; text-transform:uppercase; margin:0; padding:0px 0 0px 57px}
-.h1Erreur{ background:url(../images/puce/h1Erreur.jpg) left top no-repeat}
-.h1Contact{ background:url(../images/puce/h1Contact.jpg) left top no-repeat}
-.h1Presentation{ background:url(../images/puce/h1Presentation.jpg) left top no-repeat}
-.h1Blog{ background:url(../images/puce/h1Blog.jpg) left top no-repeat}
-
-
 /* contenu des pages internes */
 #content { width:1000px; margin:0 auto}
 #content .colPetit{ width:319px; background:url(../images/bg/contentPetitBottom.png) left bottom no-repeat; float:left}
@@ -67,7 +56,7 @@ h1{ font-family:Georgia, "Times New Roman", Times, serif; font-size:50px; color:
 #content .colGrand{ width:980px; background:url(../images/bg/contentGrandBottom.png) left bottom no-repeat; float:right}
 #content .colGrand .colGrandTop{ width:650px; background:url(../images/bg/contentGrandTop.png) left Top no-repeat; padding:15px 15px 28px}
 #content .colMiddle{ margin:0 21px}
-#content h2{ color:#1dab95; font-family:Georgia, "Times New Roman", Times, serif; font-size:28px; font-weight:normal;  padding-bottom:18px}
+#content h1{ color:#1dab95; font-family:Georgia, "Times New Roman", Times, serif; font-size:28px; font-weight:normal;  padding-bottom:18px}
 #content .black{ color:#000; font-weight:bold;}
 #content a{ color:#1dab95}
 #content a:hover{ color:#000}
